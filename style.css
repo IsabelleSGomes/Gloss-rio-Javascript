@@ -1,0 +1,136 @@
+body {
+    background: #490085;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    padding: 16px 8px;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    border: 0.5px solid #A018FF;
+    background: #E2CEFF;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+h1 {
+    color: #490085;
+    font-family: "Inter-Regular";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.select {
+    display: flex;
+    width: 451px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #E2CEFF;
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+h2 {
+    color: #490085;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+select {
+    display: flex;
+    height: 48px;
+    padding: 16px 16px 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #A018FF;
+    background: #FFF;
+}
+
+option {
+    color: #3D3D3D;
+    text-align: left;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.description {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 16px;
+    background: #E2CEFF;
+    margin-top: 24px;
+    margin-right: 24px;}
+
+h3 {
+    color: #490085;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h4 {
+    color: #490085;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.result {
+    display: flex;
+    height: 183px;
+    padding: 16px 16px 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #A018FF;
+    background: #FFF;
+}
+
+.case {
+    color: #3D3D3D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
