@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Dicionário Javbascript</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+
+<div class="title">
+    <img src="javascript_logo.png" alt="Logo do Javbascript" width="58.528px" height="66px" >
+    <h1>Bem-vindo ao Meu dicionário Javbascript!</h1>
+</div>
+
+<div class="text">
+
+    <div class="select">
+        <h2>Escolha um verbete no combo abaixo:</h2>
+        <select id="caixadeselecao">
+            <option value="opcao1">O que é JavaScript</option>
+            <option value="opcao2">Statement 'for'</option>
+            <option value="opcao3">Funções em JavaScript</option>
+            <option value="opcao4">Objetos em JavaScript</option>
+        </select>
+    </div>
+
+    <div class="description">
+        <h3>Escreva algo na área de texto abaixo:</h3>
+        <h4>O que é JavaScript:</h4>
+    
+        <div class="result">
+
+            <p id="descricao"></p>
+
+            <script>
+                 // Função para capturar o evento de mudança na caixa de seleção
+                 document.getElementById("caixadeselecao").addEventListener("change", function() {
+                 // Captura o valor selecionado
+                var valorSelecionado = document.getElementById("caixadeselecao").value;
+          
+                // Exibe o texto de descrição de acordo com a opção selecionada
+                var descricao = "";
+                switch (valorSelecionado) {
+                    case "opcao1":
+                    descricao = "JavaScript é uma linguagem baseada em objetos. Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor.";
+                    break;
+                    case "opcao2":
+                    descricao = "O statement 'for' cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência.";
+                    break;
+                    case "opcao3":
+                    descricao = "Uma função em JavaScript é um bloco de código projetado para realizar uma tarefa específica. Uma função é executada quando 'algo' a invoca (chama).";
+                    break;
+                    case "opcao4":
+                    descricao = "JavaScript é uma linguagem baseada em objetos. Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor.";
+                    break;
+                    default:
+                    descricao = "Selecione uma opção para ver a descrição.";
+                }
+          
+                // Exibe o texto de descrição na página
+                document.getElementById("descricao").innerHTML = descricao;
+                });
+            </script>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
